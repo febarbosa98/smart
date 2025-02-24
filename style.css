@@ -333,3 +333,135 @@ margin: 110px auto;
         width: 80px; /* Reduzir a largura da logo */
     }
 }
+
+@media (max-width: 425px){
+    .container{
+        height: auto;
+        margin-top: 100px; /* Reduzir a margem superior */
+        padding: 20px; /* Adicionar padding para espaçamento interno */
+    }
+    .unidadeEdelivery{
+        height: auto; /* Ajustar a altura automaticamente */
+        flex-direction: column; /* Mudar a direção do flex para coluna */
+        align-items: center; /* Centralizar os itens */
+        gap: 20px; /* Reduzir o espaçamento entre os itens */
+        padding: 20px; /* Adicionar padding para espaçamento interno */
+    }
+    .header{
+        height: auto; /* Ajustar a altura automaticamente */
+        flex-direction: column; /* Mudar a direção do flex para coluna */
+        align-items: center; /* Centralizar os itens */
+        padding: 10px; /* Adicionar padding para espaçamento interno */
+    }
+    footer{
+        height: auto; /* Ajustar a altura automaticamente */
+        padding: 20px; /* Adicionar padding para espaçamento interno */
+        margin-top: 50px; /* Reduzir a margem superior */
+    }
+    .sobre{
+        margin: 0;
+        padding: 20px; /* Adicionar padding para espaçamento interno */
+    }
+    .sectionCardapio{
+        margin: 20px 0; /* Reduzir a margem superior e inferior */
+        padding: 20px; /* Adicionar padding para espaçamento interno */
+    }
+    .fotosCardapio{
+        grid-template-columns: 1fr; /* Ajustar a grade para uma coluna */
+        gap: 10px; /* Reduzir o espaçamento entre os itens */
+    }
+    .fotosCardapio img{
+        max-width: 100%; /* Ajustar a largura máxima para 100% */
+    }
+    .btnCardapio{
+        font-size: 20px; /* Reduzir o tamanho da fonte */
+        padding: 10px; /* Reduzir o padding */
+    }
+    .smarth1{
+        font-size: 36px; /* Reduzir o tamanho da fonte */
+        text-align: center; /* Centralizar o texto */
+    }
+    .unidades h1{
+        font-size: 24px; /* Ajustar o tamanho da fonte */
+    }
+    .unidades h2{
+        font-size: 22px; /* Ajustar o tamanho da fonte */
+    }
+    .delivery button{
+        padding: 10px; /* Reduzir o padding */
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+    }
+    .linksHeader a{
+        font-size: 16px; /* Reduzir o tamanho da fonte */
+        margin-left: 10px; /* Reduzir a margem esquerda */
+    }
+    .logo{
+        width: 60px; /* Reduzir a largura da logo */
+    }
+}
+
+@media (max-width: 350px){
+    .container{
+        height: auto;
+        margin-top: 10px; 
+        padding: 10px; /* Adicionar padding para espaçamento interno */
+    }
+    .unidadeEdelivery{
+        height: auto; /* Ajustar a altura automaticamente */
+        flex-direction: column; /* Mudar a direção do flex para coluna */
+        align-items: center; /* Centralizar os itens */
+        gap: 10px; /* Reduzir o espaçamento entre os itens */
+        padding: 10px; /* Adicionar padding para espaçamento interno */
+    }
+    .header{
+        height: auto; /* Ajustar a altura automaticamente */
+        flex-direction: column; /* Mudar a direção do flex para coluna */
+        align-items: center; /* Centralizar os itens */
+        padding: 5px; /* Adicionar padding para espaçamento interno */
+    }
+    footer{
+        height: auto; /* Ajustar a altura automaticamente */
+        padding: 30px; /* Adicionar padding para espaçamento interno */
+        /* margin-top: 10px; Reduzir a margem superior */
+    }
+    .sobre{
+        margin: 0;
+        padding: 10px; /* Adicionar padding para espaçamento interno */
+    }
+    .sectionCardapio{
+        margin: 10px 0; /* Reduzir a margem superior e inferior */
+        padding: 10px; /* Adicionar padding para espaçamento interno */
+    }
+    .fotosCardapio{
+        grid-template-columns: 1fr; /* Ajustar a grade para uma coluna */
+        gap: 5px; /* Reduzir o espaçamento entre os itens */
+    }
+    .fotosCardapio img{
+        max-width: 100%; /* Ajustar a largura máxima para 100% */
+    }
+    .btnCardapio{
+        font-size: 16px; /* Reduzir o tamanho da fonte */
+        padding: 5px; /* Reduzir o padding */
+    }
+    .smarth1{
+        font-size: 30px; /* Reduzir o tamanho da fonte */
+        text-align: center; /* Centralizar o texto */
+    }
+    .unidades h1{
+        font-size: 20px; /* Ajustar o tamanho da fonte */
+    }
+    .unidades h2{
+        font-size: 18px; /* Ajustar o tamanho da fonte */
+    }
+    .delivery button{
+        padding: 5px; /* Reduzir o padding */
+        font-size: 12px; /* Reduzir o tamanho da fonte */
+    }
+    .linksHeader a{
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+        margin-left: 5px; /* Reduzir a margem esquerda */
+    }
+    .logo{
+        width: 50px; /* Reduzir a largura da logo */
+    }
+}
