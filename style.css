@@ -1,39 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    /* background: radial-gradient(rgb(27, 27, 27), rgb(43, 42, 42)); */
-    background-image: url('img/salao.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: fixed;
+html, body {
     font-family: 'Roboto', sans-serif;
     color: white;
-    height: 100vh;
-    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* HEADER */
-.header{
+body {
+    background: url('img/salao.jpg') no-repeat center center fixed;
+    background-size: cover;
+    flex: 1;
+}
+
+.header {
     display: flex;
     height: 10vh;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: #00000073;
+    background-color: rgba(0, 0, 0, 0.747);
     border-bottom: 1px solid #F7E588;
     width: 100%;
-    position: fixed;
-    z-index: 1;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px;
 }
-.logo{
+
+.logo {
     width: 140px;
 }
-.linksHeader a{
+
+.linksHeader a {
     text-decoration: none;
     font-size: 32px;
     font-weight: bold;
@@ -41,78 +45,71 @@ body{
     font-variant: small-caps;
     margin-left: 50px;
     transition: 0.5s;
-}.linksHeader a:hover{
+}
+
+.linksHeader a:hover {
     color: #F7E588;
     border-bottom-left-radius: 1px solid #F7E588;
 }
 
-/* FOOTER */
-footer{
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    height: 10vh;
-    flex-wrap: wrap;
-    align-items: center;
-    background-color: #00000073;
-    border-top: 1px solid #F7E588;
+footer {
     width: 100%;
-    margin-top: 100px;
-
-}
-
-/* HOME */
-.containerSection{
-    position: absolute;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.747);
+    border-top: 1px solid #F7E588;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 80vh;
-    margin: 150px 0;
-    /* padding: 10px 0; */
-    
+    margin-top: auto;
 }
 
-.container{
-    background-color: #000000c7;
+.containerSection {
     display: flex;
-    /* height: 100vh; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin: 150px auto; */
+    width: 100%;
+    /* min-height: calc(90vh - 10vh); */
+    flex: 1;
+}
+
+.container {
+    background-color: #000000c7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 60px 0;
     width: 100%;
     border-top: 1px solid #F7E588;
     border-bottom: 1px solid #F7E588;
-    
 }
 
-.unidadeEdelivery{
-    height: 50vh;
+.unidadeEdelivery {
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 400px;
     margin: 0 20px;
 }
-.unidades{
+
+.unidades {
     display: flex;
     flex-direction: column;
     gap: 10px;
     line-height: 27px;
     font-size: 20px;
 }
-.delivery{
+
+.delivery {
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto; */
     gap: 15px 0;
-    /* text-align: center; */
     text-transform: uppercase;
 }
-.delivery button{
+
+.delivery button {
     padding: 16px;
     font-size: 18px;
     font-weight: 700;
@@ -122,91 +119,81 @@ footer{
     text-transform: capitalize;
     border-radius: 15px;
 }
-.delivery button:hover{
+
+.delivery button:hover {
     background-color: #F7E588;
     border: 2px solid white;
-    color: #1B1B1B
+    color: #1B1B1B;
 }
-.smarth1{
+
+.smarth1 {
     font-size: 70px;
     font-weight: 700;
-    
-
 }
 
-/* SOBRE */
-
-.sobreNos{
-    position: absolute;
+.sobreNos {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     margin: 150px 0;
-    /* width: 50vw; */
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
 }
 
-.imgs{
+.imgs {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     border: 2px solid #F7E588;
     margin: 30px;
-
-    /* position: relative; */
 }
-.imgs img{
+
+.imgs img {
     max-width: 600px;
     min-width: 150px;
     width: 100%;
-
 }
-.sobre{
+
+.sobre {
     border: 2px solid #F7E588;
     background-color: #1B1B1B;
     color: #F7E588;
-    /* position: absolute; */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: -100px 10px 70px;
     padding: 30px 20px;
-    font-size: 20PX;
+    font-size: 20px;
     max-width: 850px;
     text-align: justify;
     width: auto;
 }
 
-
-/* CARDAPIO */
-.sectionCardapio{
-display: flex;
-position: absolute;
-flex-direction: column;
-height: 80vh;
-width: 100%;
-align-items:  center ;
-justify-content: center;
-margin: 110px auto;
+.sectionCardapio {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 110px auto;
 }
-.fotosCardapio{
+
+.fotosCardapio {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6px;
     margin: 20px;
-    
 }
-.fotosCardapio img{
+
+.fotosCardapio img {
     max-width: 300px;
     width: 100%;
 }
-.btnCardapio{
+
+.btnCardapio {
     margin-top: 30px;
     font-size: 50px;
     background-color: #1B1B1B;
@@ -216,252 +203,282 @@ margin: 110px auto;
     border-radius: 10px;
     cursor: pointer;
 }
-.btnCardapio:hover{
+
+.btnCardapio:hover {
     background-color: #F7E588;
     border: 2px solid #1B1B1B;
-    color: #1B1B1B
-    ;
+    color: #1B1B1B;
 }
 
-
-@media (max-width: 900px){
-    .containerSection{
+/* Media Queries */
+@media (max-width: 900px) {
+    .containerSection {
         margin: 100px 0;
     }
-    .unidadeEdelivery{
-        /* flex-direction: column; */
+    .unidadeEdelivery {
         gap: 100px;
         justify-content: center;
         width: 100%;
         padding: 0 10px;
         flex-wrap: wrap;
     }
-    .unidades{
+    .unidades {
         text-align: center;
     }
-    .sobreNos{
+    .sobreNos {
         margin: 100px 0;
     }
-    .imgs{
+    .imgs {
         flex-direction: column;
     }
-    .sobre{
+    .sobre {
         margin: 0;
     }
-    .sectionCardapio{
+    .sectionCardapio {
         margin: 100px 0;
     }
-    .fotosCardapio{
+    .fotosCardapio {
         grid-template-columns: 1fr;
     }
-    .fotosCardapio img{
+    .fotosCardapio img {
         max-width: 100%;
     }
-    .btnCardapio{
+    .btnCardapio {
         font-size: 30px;
     }
-    .smarth1{
+    .smarth1 {
         font-size: 50px;
     }
-    .delivery button{
+    .delivery button {
         padding: 10px;
         font-size: 14px;
     }
-    .linksHeader a{
+    .linksHeader a {
         font-size: 20px;
     }
-    .logo{
+    .logo {
         width: 100px;
     }
+}
+
+@media (max-width: 710px) {
+    .container {
+        height: auto;
+        /* margin-top: 150px; */
+        padding: 20px;
+    }
+    .unidadeEdelivery {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    .header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    footer {
+        height: auto;
+        padding: 20px;
+        /* margin-top: 50px; */
+    }
+    .sobre {
+        margin: 0;
+        padding: 20px;
+    }
+    .sectionCardapio {
+        margin: 20px 0;
+        padding: 20px;
+    }
+    .fotosCardapio {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .fotosCardapio img {
+        max-width: 100%;
+    }
+    .btnCardapio {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .smarth1 {
+        font-size: 40px;
+    }
+    .delivery button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .linksHeader a {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .logo {
+        width: 80px;
+    }
+}
+
+
+
+@media (max-width: 365px) {
+    .container {
+        height: auto;
+        margin-top: -50px;
+        padding: 10px;
+    }
+    .unidadeEdelivery {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    .header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    footer {
+        height: auto;
+        margin-top: -50px;
+    }
+    .sobre {
+        margin: 0;
+        padding: 10px;
+    }
+    .sectionCardapio {
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .fotosCardapio {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    .fotosCardapio img {
+        max-width: 100%;
+    }
+    .btnCardapio {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .smarth1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .unidades h1 {
+        font-size: 20px;
+    }
+    .unidades h2 {
+        font-size: 18px;
+    }
+    .delivery button {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .linksHeader a {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .logo {
+        width: 50px;
+    }
+}
+
+/* @media (max-width: 414px) {
+   
+    .unidadeEdelivery {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
     
-}
-@media (max-width: 710px){
-    .container{
+    footer {
         height: auto;
-        margin-top: 150px; /* Reduzir a margem superior */
-        padding: 20px; /* Adicionar padding para espaçamento interno */
+        padding: 20px;
+        margin-top: 50px;
     }
-    .unidadeEdelivery{
-        height: auto; /* Ajustar a altura automaticamente */
-        flex-direction: column; /* Mudar a direção do flex para coluna */
-        align-items: center; /* Centralizar os itens */
-        gap: 20px; /* Reduzir o espaçamento entre os itens */
-        padding: 20px; /* Adicionar padding para espaçamento interno */
-    }
-    .header{
-        height: auto; /* Ajustar a altura automaticamente */
-        flex-direction: column; /* Mudar a direção do flex para coluna */
-        align-items: center; /* Centralizar os itens */
-        padding: 10px; /* Adicionar padding para espaçamento interno */
-    }
-    footer{
-        height: auto; /* Ajustar a altura automaticamente */
-        padding: 20px; /* Adicionar padding para espaçamento interno */
-        margin-top: 50px; /* Reduzir a margem superior */
-    }
-    .sobre{
+    .sobre {
         margin: 0;
-        padding: 20px; /* Adicionar padding para espaçamento interno */
+        padding: 20px;
     }
-    .sectionCardapio{
-        margin: 20px 0; /* Reduzir a margem superior e inferior */
-        padding: 20px; /* Adicionar padding para espaçamento interno */
+    .sectionCardapio {
+        margin: 20px 0;
+        padding: 20px;
     }
-    .fotosCardapio{
-        grid-template-columns: 1fr; /* Ajustar a grade para uma coluna */
-        gap: 10px; /* Reduzir o espaçamento entre os itens */
+    .fotosCardapio {
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
-    .fotosCardapio img{
-        max-width: 100%; /* Ajustar a largura máxima para 100% */
+    .fotosCardapio img {
+        max-width: 100%;
     }
-    .btnCardapio{
-        font-size: 20px; /* Reduzir o tamanho da fonte */
-        padding: 10px; /* Reduzir o padding */
+    .btnCardapio {
+        font-size: 20px;
+        padding: 10px;
     }
-    .smarth1{
-        font-size: 40px; /* Reduzir o tamanho da fonte */
+    .smarth1 {
+        font-size: 36px;
+        text-align: center;
     }
-    .delivery button{
-        padding: 10px; /* Reduzir o padding */
-        font-size: 14px; /* Reduzir o tamanho da fonte */
+    .unidades h1 {
+        font-size: 24px;
     }
-    .linksHeader a{
-        font-size: 20px; /* Reduzir o tamanho da fonte */
-        margin-left: 10px; /* Reduzir a margem esquerda */
+    .unidades h2 {
+        font-size: 22px;
     }
-    .logo{
-        width: 80px; /* Reduzir a largura da logo */
+    .delivery button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .linksHeader a {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .logo {
+        width: 60px;
+    }
+} */
+
+@media (max-width: 320px) {
+    .linksHeader a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .smarth1 {
+        font-size: 28px;
+    }
+    .btnCardapio {
+        font-size: 14px;
+        padding: 4px;
     }
 }
 
-@media (max-width: 425px){
-    .container{
-        height: auto;
-        margin-top: 100px; /* Reduzir a margem superior */
-        padding: 20px; /* Adicionar padding para espaçamento interno */
+@media (max-width: 768px) and (orientation: landscape) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 10px;
     }
-    .unidadeEdelivery{
-        height: auto; /* Ajustar a altura automaticamente */
-        flex-direction: column; /* Mudar a direção do flex para coluna */
-        align-items: center; /* Centralizar os itens */
-        gap: 20px; /* Reduzir o espaçamento entre os itens */
-        padding: 20px; /* Adicionar padding para espaçamento interno */
-    }
-    .header{
-        height: auto; /* Ajustar a altura automaticamente */
-        flex-direction: column; /* Mudar a direção do flex para coluna */
-        align-items: center; /* Centralizar os itens */
-        padding: 10px; /* Adicionar padding para espaçamento interno */
-    }
-    footer{
-        height: auto; /* Ajustar a altura automaticamente */
-        padding: 20px; /* Adicionar padding para espaçamento interno */
-        margin-top: 50px; /* Reduzir a margem superior */
-    }
-    .sobre{
-        margin: 0;
-        padding: 20px; /* Adicionar padding para espaçamento interno */
-    }
-    .sectionCardapio{
-        margin: 20px 0; /* Reduzir a margem superior e inferior */
-        padding: 20px; /* Adicionar padding para espaçamento interno */
-    }
-    .fotosCardapio{
-        grid-template-columns: 1fr; /* Ajustar a grade para uma coluna */
-        gap: 10px; /* Reduzir o espaçamento entre os itens */
-    }
-    .fotosCardapio img{
-        max-width: 100%; /* Ajustar a largura máxima para 100% */
-    }
-    .btnCardapio{
-        font-size: 20px; /* Reduzir o tamanho da fonte */
-        padding: 10px; /* Reduzir o padding */
-    }
-    .smarth1{
-        font-size: 36px; /* Reduzir o tamanho da fonte */
-        text-align: center; /* Centralizar o texto */
-    }
-    .unidades h1{
-        font-size: 24px; /* Ajustar o tamanho da fonte */
-    }
-    .unidades h2{
-        font-size: 22px; /* Ajustar o tamanho da fonte */
-    }
-    .delivery button{
-        padding: 10px; /* Reduzir o padding */
-        font-size: 14px; /* Reduzir o tamanho da fonte */
-    }
-    .linksHeader a{
-        font-size: 16px; /* Reduzir o tamanho da fonte */
-        margin-left: 10px; /* Reduzir a margem esquerda */
-    }
-    .logo{
-        width: 60px; /* Reduzir a largura da logo */
+    .linksHeader a {
+        font-size: 18px;
+        margin-left: 20px;
     }
 }
 
-@media (max-width: 350px){
-    .container{
-        height: auto;
-        margin-top: 10px; 
-        padding: 10px; /* Adicionar padding para espaçamento interno */
+@media (min-width: 1200px) {
+    .containerSection {
+        flex-direction: row;
+        justify-content: space-around;
     }
-    .unidadeEdelivery{
-        height: auto; /* Ajustar a altura automaticamente */
-        flex-direction: column; /* Mudar a direção do flex para coluna */
-        align-items: center; /* Centralizar os itens */
-        gap: 10px; /* Reduzir o espaçamento entre os itens */
-        padding: 10px; /* Adicionar padding para espaçamento interno */
+    .unidadeEdelivery {
+        gap: 50px;
     }
-    .header{
-        height: auto; /* Ajustar a altura automaticamente */
-        flex-direction: column; /* Mudar a direção do flex para coluna */
-        align-items: center; /* Centralizar os itens */
-        padding: 5px; /* Adicionar padding para espaçamento interno */
-    }
-    footer{
-        height: auto; /* Ajustar a altura automaticamente */
-        padding: 30px; /* Adicionar padding para espaçamento interno */
-        /* margin-top: 10px; Reduzir a margem superior */
-    }
-    .sobre{
-        margin: 0;
-        padding: 10px; /* Adicionar padding para espaçamento interno */
-    }
-    .sectionCardapio{
-        margin: 10px 0; /* Reduzir a margem superior e inferior */
-        padding: 10px; /* Adicionar padding para espaçamento interno */
-    }
-    .fotosCardapio{
-        grid-template-columns: 1fr; /* Ajustar a grade para uma coluna */
-        gap: 5px; /* Reduzir o espaçamento entre os itens */
-    }
-    .fotosCardapio img{
-        max-width: 100%; /* Ajustar a largura máxima para 100% */
-    }
-    .btnCardapio{
-        font-size: 16px; /* Reduzir o tamanho da fonte */
-        padding: 5px; /* Reduzir o padding */
-    }
-    .smarth1{
-        font-size: 30px; /* Reduzir o tamanho da fonte */
-        text-align: center; /* Centralizar o texto */
-    }
-    .unidades h1{
-        font-size: 20px; /* Ajustar o tamanho da fonte */
-    }
-    .unidades h2{
-        font-size: 18px; /* Ajustar o tamanho da fonte */
-    }
-    .delivery button{
-        padding: 5px; /* Reduzir o padding */
-        font-size: 12px; /* Reduzir o tamanho da fonte */
-    }
-    .linksHeader a{
-        font-size: 14px; /* Reduzir o tamanho da fonte */
-        margin-left: 5px; /* Reduzir a margem esquerda */
-    }
-    .logo{
-        width: 50px; /* Reduzir a largura da logo */
+    .smarth1 {
+        font-size: 80px;
     }
 }
