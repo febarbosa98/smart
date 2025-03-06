@@ -238,9 +238,7 @@ footer {
         align-items: center;
         margin: 100px 0 ;
     }
-    .fotosCardapio {
-        /* grid-template-columns: fr; */
-    }
+    
     .fotosCardapio img {
         width: 100%;
     }
@@ -368,7 +366,7 @@ footer {
     }
    
     .sectionCardapio {
-        margin: 100px 0;
+        margin-top: 200px;
         padding: 10px;
     }
     .fotosCardapio {
@@ -443,7 +441,9 @@ footer {
     .containerSection {
         flex-direction: row;
         justify-content: space-around;
+        margin: 50px 0;
     }
+   
     .unidadeEdelivery {
         gap: 50px;
     }
