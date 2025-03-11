@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <a href="index.html">
-            <img src="img/images-removebg-preview.png"  class="logo" alt="">
+            <img src="img/images-removebg-preview.png" class="logo" alt="">
         </a>
         <div class="linksHeader">
             <a href="index.html">home</a>
@@ -19,17 +22,53 @@
         </div>
     </header>
 
-<section class="sectionCardapio">
+    <section class="sectionCardapio">
 
-    <div class="fotosCardapio">
-        <img src="img/cordel.jpg" alt=""><img src="img/cupim.jpg" alt=""><img src="img/mrcouve.jpg" alt=""><img src="img/pansex.jpg" alt=""><img src="img/salada.jpg" alt=""><img src="img/waffle.jpg" alt="">    
-    </div>
-    <button class="btnCardapio">CARDAPIO COMPLETO</button>
-</section>
-<footer>
-    <div>
-        <p>© 2025 - Todos os direitos reservados.</p>
-    </div>
-</footer>
+        <div class="fotosCardapio">
+            <img src="img/cordel.jpg" alt="" 
+            data-aos="zoom-in-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="2000"
+            >
+
+            <img src="img/cupim.jpg" alt=""
+           data-aos="zoom-in-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="2000">
+
+            <img src="img/mrcouve.jpg" alt=""
+           data-aos="zoom-in-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="2000">
+            
+
+            <img src="img/pansex.jpg" alt=""
+           data-aos="zoom-in-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="2000">
+
+            <img src="img/salada.jpg" alt=""
+           data-aos="zoom-in-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="2000">
+
+            <img src="img/waffle.jpg" alt=""
+           data-aos="zoom-in-up"
+     data-aos-anchor-placement="top-bottom"
+     data-aos-duration="2000">
+
+        </div>
+        <button class="btnCardapio" data-aos="fade-up">CARDAPIO COMPLETO</button>
+    </section>
+    <footer >
+        <div>
+            <p>© 2025 - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

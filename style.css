@@ -366,6 +366,7 @@ footer {
 @media (max-width: 365px) {
     body{
         background-attachment: scroll;
+
     }
     .container {
         height: auto;

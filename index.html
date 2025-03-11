@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Burger</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-down" >
         <a href="index.html">
             <img src="img/images-removebg-preview.png" class="logo" alt="">
         </a>
@@ -21,12 +22,13 @@
     </header>
     
     <section class="containerSection">
-        <div class="container">
+        <div class="container" data-aos="fade-down">
             <div>
-                <h1 class="smarth1">SMART BURGER</h1>
+                <h1 class="smarth1" data-aos="fade-down">SMART BURGER</h1>
             </div>
             <div class="unidadeEdelivery">
-                <div class="unidades" id="unidades">
+                <div class="unidades" id="unidades" data-aos="fade-right"  data-aos-offset="300"
+                data-aos-easing="ease-in-sine" >
                     <h1>UNIDADES PRESENCIAS</h1>
                     <div class="unidade1">
                         <br>
@@ -53,7 +55,8 @@
                         <p><strong>Telefone:</strong> 11 3698-5858</p>
                     </div>
                 </div>
-                <div class="delivery">
+                <div class="delivery" data-aos="fade-left"  data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <h3>faça seu pedido</h3>
                     <button>osasco</button>
                     <button>carapicuiba</button>
@@ -75,6 +78,10 @@
             <p>© 2025 - Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
