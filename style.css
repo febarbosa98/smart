@@ -14,7 +14,10 @@ html, body {
 }
 
 body {
-    background: url('img/salao.jpg') no-repeat center center fixed;
+    background-image: url('img/salao.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     flex: 1;
 }
@@ -54,7 +57,8 @@ body {
 
 footer {
     width: 100%;
-    height: 5vh;
+    min-height: 5vh;
+    max-height: 10vh;
     background-color: rgba(0, 0, 0, 0.747);
     border-top: 1px solid #F7E588;
     display: flex;
@@ -137,7 +141,10 @@ footer {
     justify-content: center;
     width: 100%;
     height: 60vh;
-    margin: 150px 0;
+    /* margin: 150px 0; */
+    margin-top: 250px;
+    margin-bottom: 250px;
+    /* padding: 150px 0; */
     flex-direction: column;
 }
 
@@ -228,7 +235,9 @@ footer {
         text-align: center;
     }
     .sobreNos {
-        margin: 100px 0;
+        height: 70%;
+        margin-top: 250px ;
+        margin-bottom: 30px;
     }
     
     .sobre {
@@ -282,6 +291,9 @@ footer {
     footer {
         height: auto;
         padding: 20px;
+    }
+    .sobreNos {
+        margin-top: 160px ;
     }
     .sobre {
         font-size: 18px;
@@ -338,8 +350,19 @@ footer {
     .sectionCardapio{
         margin-top: 250px;
     }
+    .sobreNos {
+        margin-top: 190px ;
+        margin-bottom: 0px;
+    }
  }
-
+ @media (max-height: 670px) {
+    
+    
+    .sobreNos {
+        margin-top: 250px ;
+        margin-bottom: 20px;
+    }
+ }
 
 @media (max-width: 365px) {
     .container {
@@ -360,9 +383,15 @@ footer {
         align-items: center;
         padding: 5px;
     }
-    
+    .sobreNos {
+        height: 100%;
+        margin-top: 250px ;
+    }
     .sobre {
         margin-top: 0;
+    }
+    .imgs {
+        margin: 10px;
     }
    
     .sectionCardapio {
